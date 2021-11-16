@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вольнов Михаил - создание сайтов для вашего бизнеса</title>
+
+    <link rel="preload" href="fonts/open-sans-v26-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v26-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v26-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v26-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <img src="" alt="Логотип Вольнова Михаила" class="header__logo">
+        <div class="header__container container">
+            <img src="img/header/logo.svg" alt="Логотип Вольнова Михаила" class="header__logo">
 
             <address class="header__contacts contacts">
                 <ul class="contacts__list">
@@ -24,7 +31,7 @@
                     </li>
 
                     <li class="contacts__item">
-                        <p class="contacts__head">Соц. сети</p>
+                        <p class="contacts__head contacts__head--social">Соц. сети</p>
                         <ul class="contacts__social-list">
                             <li class="contacts__social-item"><a href="#" class="contacts__social-link contacts__social-link--whatsup"></a></li>
                             <li class="contacts__social-item"><a href="#" class="contacts__social-link contacts__social-link--instagram"></a></li>
@@ -42,7 +49,7 @@
     <main>
         <section class="present">
             <div class="container">
-                <img src="" alt="Фотография Вольнова Михаила" class="present__photo">
+                <img src="img/present/portrait.JPG" alt="Фотография Вольнова Михаила" class="present__photo">
 
                 <div class="present__content">
                     <hgroup class="present__group-title">
@@ -80,7 +87,7 @@
                     <ul class="portfolio__list">
                         <li class="portfolio__item"></li>
                             <article class="card">
-                                <img src="" alt="" class="card__picture">
+                                <img src="img/portfolio/cinema.jpg" alt="" class="card__picture">
 
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>

@@ -96,6 +96,7 @@
     }
 
     .header__contacts {
+        display: block;
         top: 101px;
         padding: 40px;
     }
@@ -117,15 +118,19 @@
         top: 0;
         height: 100%;
         padding: 50px 0;
+        /* padding: 50px 0 58px 31px; */
     }
 
     .header__container {
         height: 100%;
         flex-direction: column;
+        align-items: start;
     }
 
     .header__contacts {
         position: static;
+        padding: 31px 0 58px 0;
+        /* padding-left: 0; */
     }
 
     .contacts__list {
@@ -144,5 +149,9 @@
 @media (min-width: 1440px) {
     .header {
         padding-top: 60px;
+    }
+
+    .header__container {
+        padding-left: 165px;
     }
 }

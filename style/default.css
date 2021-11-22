@@ -76,9 +76,21 @@ section {
     .container {
         padding: 0 40px;
     }
+
+    section {
+        padding: 50px 0;
+    }
 }
 
 @media (min-width: 992px) {
+    .container {
+        padding: 0px 30px 0 270px;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
     .page__header {
         width: 240px;
         position: fixed;
@@ -89,6 +101,10 @@ section {
 }
 
 @media (min-width: 1440px) {
+    section {
+        padding: 75px 0;
+    }
+
     .page {
         background-image: linear-gradient(to right, var(--gray) 24%, transparent 24%);
     }

@@ -11,7 +11,14 @@
     <link rel="preload" href="fonts/open-sans-v26-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/open-sans-v26-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
 
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/fonts.css">
+
+    <script src="libs/jquery-3.6.0.min.js" defer></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body class="page">
     <header class="page__header header">
@@ -83,11 +90,11 @@
             <div class="container">
                 <h2 class="portfolio__title">Портфолио</h2>
 
-                <div class="portfolio__slider">
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item"></li>
+                <div class="portfolio__slider swiper">
+                    <ul class="portfolio__list swiper-wrapper">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
-                                <img src="img/portfolio/cinema.jpg" alt="" class="card__picture">
+                                <img src="img/portfolio/cinema.jpg" alt="Картинка сайта" class="card__picture">
 
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>
@@ -96,17 +103,110 @@
 
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
-                        <li class="portfolio__item"></li>
+                        </li>
 
-                        <li class="portfolio__item"></li>
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="img/portfolio/iphone.jpg" alt="Картинка сайта" class="card__picture">
 
-                        <li class="portfolio__item"></li>
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Cinema</span>
+                                    <time class="card__date" datetime="2020">год: 2020</time>
+                                </p>
 
-                        <li class="portfolio__item"></li>
+                                <h3 class="card__title">Многостраничный сайт</h3>
+                            </article>
+                        </li>
+
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="img/portfolio/go.jpg" alt="Картинка сайта" class="card__picture">
+
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Cinema</span>
+                                    <time class="card__date" datetime="2020">год: 2020</time>
+                                </p>
+
+                                <h3 class="card__title">Многостраничный сайт</h3>
+                            </article>
+                        </li>
+
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="img/portfolio/friendly_house.jpg" alt="Картинка сайта" class="card__picture">
+
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Cinema</span>
+                                    <time class="card__date" datetime="2020">год: 2020</time>
+                                </p>
+
+                                <h3 class="card__title">Многостраничный сайт</h3>
+                            </article>
+                        </li>
+
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="img/portfolio/dom.jpg" alt="Картинка сайта" class="card__picture">
+
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Cinema</span>
+                                    <time class="card__date" datetime="2020">год: 2020</time>
+                                </p>
+
+                                <h3 class="card__title">Многостраничный сайт</h3>
+                            </article>
+                        </li>
                     </ul>
+
+                    <button class="portfolio__arrow portfolio__arrow--left"></button>
+                    <button class="portfolio__arrow portfolio__arrow--right"></button>
                 </div>
             </div>
         </section>
     </main>
+
+    <div class="page__overlay">
+        <div class="modal">
+            <h2 class="modal__title">Заполните форму и я свяжусь с вами</h2>
+
+            <form class="modal__form callback">
+                <label class="callback__label">
+                    <span class="callback__label-text">ФИО</span>
+                    <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+                </label>
+
+                <label class="callback__label">
+                    <span class="callback__label-text">Телефон</span>
+                    <input class="callback__input" type="text" name="phone" placeholder="Введите ваш номер телефона">
+                </label>
+
+                <fieldset class="callback__group connect">
+                    <legend class="connect__title">Где удобнее связаться?</legend>
+
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="telegram">
+                        <span class="connect-text">Телеграмм</span>
+                    </label>
+
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="whatsup">
+                        <span class="connect-text">Whatsup</span>
+                    </label>
+
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="call">
+                        <span class="connect-text">Позвонить</span>
+                    </label>
+
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="viber">
+                        <span class="connect-text">Viber</span>
+                    </label>
+                </fieldset>
+
+                <button class="callback__btn">Заказать</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,136 @@
+.portfolio {
+    color: var(--black);
+}
+
+.portfolio__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.card {
+    box-sizing: border-box;
+    max-width: 252px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 14px;
+}
+
+.card__picture {
+    align-self: center;
+    width: 155px;
+    height: 92px;
+    padding: 5px 18px 12px;
+    background-image: url('../img/portfolio/macbook.svg');
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.card__data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card__client {
+    line-height: 120%;
+}
+
+.card__date {
+    line-height: 140%;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.portfolio__slider {
+    position: relative;
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+.portfolio__arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-image: url('../img/portfolio/arrow.svg');
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.portfolio__arrow--left {
+    left: 0;
+}
+
+.portfolio__arrow--right {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.portfolio__arrow--disable {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+@media (min-width: 480px) {
+    .portfolio__slider {
+        max-width: 340px;
+    }
+
+    .portfolio__title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio__slider {
+        max-width: 688px;
+    }
+}
+
+@media (min-width: 992px) {
+    .portfolio__slider {
+        max-width: 690px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .portfolio__slider {
+        max-width: 825px;
+    }
+
+    .portfolio__title {
+        font-size: 50px;
+    }
+
+    .card__date {
+        font-size: 16px;
+    }
+
+    .card__title {
+        font-size: 18px;
+    }
+
+    .card {
+        max-width: 366px;
+    }
+
+    .card__picture {
+        width: 213px;
+        height: 126px;
+        padding: 6px 26px 15px;
+    }
+}
+

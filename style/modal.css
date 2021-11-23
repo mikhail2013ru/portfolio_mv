@@ -1,0 +1,16 @@
+.modal {
+    background-color: var(--white);
+    border: 1px solid var(--middleGray);
+    border-radius: 14px;
+    margin: auto;
+    padding: 40px 15px;
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 224px;
+}

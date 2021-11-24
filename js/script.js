@@ -25,3 +25,11 @@ new Swiper('.swiper', {
 $('.header__contacts-burger').click(function() {
     $('.header__contacts').slideToggle();
 })
+
+$('.callback__btn').click(() => {
+  $('.page__overlay--modal').fadeIn(400).css('display', 'flex')
+})
+
+$('.modal__close').click(() => {
+  $('.page__overlay--modal').fadeOut(400)
+})

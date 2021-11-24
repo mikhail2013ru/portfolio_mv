@@ -1,0 +1,15 @@
+.callback__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 16px 60px;
+    background-color: var(--orange);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.callback__btn:hover {
+    background-color: #e87b40ab;
+}

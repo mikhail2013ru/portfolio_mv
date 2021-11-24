@@ -1,9 +1,27 @@
 .modal {
+    position: relative;
     background-color: var(--white);
     border: 1px solid var(--middleGray);
     border-radius: 14px;
     margin: auto;
     padding: 40px 15px;
+    color: var(--black);
+    min-width: 290px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal__close-icon {
+    fill: #282626;
+    transition: all 0.2s ease-in;
+}
+
+.modal__close-icon:hover {
+    fill: var(--orange);
 }
 
 .modal__title {
@@ -13,4 +31,105 @@
     text-align: center;
     text-transform: uppercase;
     max-width: 224px;
+    margin: 0 auto 30px;
+    color: var(--black);
 }
+
+.callback__label {
+    position: relative;
+    display: block;
+}
+
+.callback__label:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.callback__label-text {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--middleBlack);
+}
+
+.callback__input {
+    border: 1px solid var(--liteGray);
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    padding: 33px 15px 33px 15px;
+    line-height: 130%;
+}
+
+.callback__input::placeholder {
+    color: var(--liteGray);
+}
+
+.callback__group:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.connect__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.connect__label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.connect__radio {
+    margin-right: 15px;
+}
+
+@media (min-width: 320px) {
+    .modal {
+        width: 100%;
+    }
+
+    .callback__input {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal {
+        max-width: 730px;
+    }
+
+    .modal__title, .connect__title {
+        font-size: 18px;
+    }
+
+    .callback__label-text {
+        top: 12px;
+    }
+
+    .callback__input {
+        padding: 45px 15px 33px 15px;
+    }
+
+    .callback__input {
+        font-size: 16px;
+    }
+
+    .connect__radio {
+        margin-right: 75px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .modal {
+        max-width: 1010px;
+        /* width: 100%; */
+    }
+}
+
+

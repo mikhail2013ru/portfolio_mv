@@ -1,7 +1,9 @@
 :root {
     --black: #110303;
+    --middleBlack: #303030;
     --gray: #A1B7C8;
     --middleGray: #646464;
+    --liteGray: #afafaf;
     --orange: #E87C40;
     --white: #fff;
     --color-text: #FFFFFF;

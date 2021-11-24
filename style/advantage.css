@@ -50,11 +50,13 @@
     background-image: url('../img/advantage/copyright.svg');
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
     .advantage__title {
         font-size: 40px;
     }
+}
 
+@media (min-width: 480px) {
     .advantage__item {
         font-size: 16px;
     }

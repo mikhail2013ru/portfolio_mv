@@ -66,7 +66,7 @@
 
                     <p class="present__description">Меня зовут Вольнов Михаил, я разработчик сайтов с&nbsp;опытом 1&nbsp;год</p>
 
-                    <button class="present__order-btn">Заказать</button>
+                    <button class="callback__btn">Заказать</button>
                 </div>
             </div>
         </section>
@@ -110,11 +110,11 @@
                                 <img src="img/portfolio/iphone.jpg" alt="Картинка сайта" class="card__picture">
 
                                 <p class="card__data">
-                                    <span class="card__client">Клиент: Cinema</span>
+                                    <span class="card__client">Клиент: Full Apple</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
                                 </p>
 
-                                <h3 class="card__title">Многостраничный сайт</h3>
+                                <h3 class="card__title">Landing-page</h3>
                             </article>
                         </li>
 
@@ -123,11 +123,11 @@
                                 <img src="img/portfolio/go.jpg" alt="Картинка сайта" class="card__picture">
 
                                 <p class="card__data">
-                                    <span class="card__client">Клиент: Cinema</span>
-                                    <time class="card__date" datetime="2020">год: 2020</time>
+                                    <span class="card__client">Клиент: Game Over</span>
+                                    <time class="card__date" datetime="2020">год: 2019</time>
                                 </p>
 
-                                <h3 class="card__title">Многостраничный сайт</h3>
+                                <h3 class="card__title">Landing-page</h3>
                             </article>
                         </li>
 
@@ -136,11 +136,11 @@
                                 <img src="img/portfolio/friendly_house.jpg" alt="Картинка сайта" class="card__picture">
 
                                 <p class="card__data">
-                                    <span class="card__client">Клиент: Cinema</span>
+                                    <span class="card__client">Клиент: Friendly House</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
                                 </p>
 
-                                <h3 class="card__title">Многостраничный сайт</h3>
+                                <h3 class="card__title">Landing-page</h3>
                             </article>
                         </li>
 
@@ -149,7 +149,7 @@
                                 <img src="img/portfolio/dom.jpg" alt="Картинка сайта" class="card__picture">
 
                                 <p class="card__data">
-                                    <span class="card__client">Клиент: Cinema</span>
+                                    <span class="card__client">Клиент: ItalGroup boutique</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
                                 </p>
 
@@ -165,20 +165,23 @@
         </section>
     </main>
 
-    <div class="page__overlay">
+    <div class="page__overlay page__overlay--modal">
         <div class="modal">
             <h2 class="modal__title">Заполните форму и я свяжусь с вами</h2>
 
             <form class="modal__form callback">
-                <label class="callback__label">
-                    <span class="callback__label-text">ФИО</span>
-                    <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
-                </label>
-
-                <label class="callback__label">
-                    <span class="callback__label-text">Телефон</span>
-                    <input class="callback__input" type="text" name="phone" placeholder="Введите ваш номер телефона">
-                </label>
+                <fieldset class="callback__group">
+                    <legend class="visually-hidden">Личные данные</legend>
+                    <label class="callback__label">
+                        <span class="callback__label-text">ФИО</span>
+                        <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+                    </label>
+    
+                    <label class="callback__label">
+                        <span class="callback__label-text">Телефон</span>
+                        <input class="callback__input" type="text" name="phone" placeholder="Введите ваш номер телефона">
+                    </label>
+                </fieldset>
 
                 <fieldset class="callback__group connect">
                     <legend class="connect__title">Где удобнее связаться?</legend>
@@ -204,8 +207,15 @@
                     </label>
                 </fieldset>
 
-                <button class="callback__btn">Заказать</button>
+                <button type="submit" class="callback__btn">Заказать</button>
             </form>
+
+            <button class="modal__close">
+                <svg class="modal__close-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="29.1681" height="1.94454" rx="0.972271" transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 20.625)"/>
+                    <rect width="29.1681" height="1.94454" rx="0.972271" transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.375 0)"/>
+                </svg>                    
+            </button>
         </div>
     </div>
 </body>
